@@ -69,3 +69,39 @@
 .mailcircle {
   background-color: #3B5382
 }
+/*filling colors*/
+.white-bg-icon {
+  background-color: #FFF;
+  fill: #FFF;
+}
+
+.drk-blue-bg{
+  background-color: #3B5382;
+  fill: #3B5382;
+}
+
+.green-bg {
+  background-color: #32BBAA;
+  fill: #32BBAA;
+}
+
+.blue-bg {
+  background-color: #3377BB;
+  fill: #3377BB;
+}
+
+.white {
+  color: #FFF;
+}
+
+.drk-blue {
+  color: #3B5382;
+}
+
+.green {
+  color: #32BBAA;
+}
+
+.blue {
+  color: #3377BB;
+}
