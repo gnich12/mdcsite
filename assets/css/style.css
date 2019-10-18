@@ -61,19 +61,6 @@ h2 {
     justify-content: stretch;
 }
 
-.contain-small {
-    width: 50%;
-    padding: 1rem 3rem;
-}
-
-.small--blue {
-    background-color: #3B5382;
-}
-
-.small--green {
-    background-color: #32BBAA;
-}
-
 .section-title {
     display: flex;
     flex-direction: row;
@@ -95,20 +82,14 @@ h2 {
     align-self: center;
 }
 
-.smart-card {
-    margin: 1em auto;
-    max-width: 600px;
-}
-
 .nanny-container {
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
 }
 
-.nanny-card {
+.card-margin {
     margin: 1em auto;
-    max-width: 45%;
 }
 
 .card--title {
@@ -117,7 +98,6 @@ h2 {
 }
 
 .card--content {
-    color: #3B5382;
     padding: 0.5em 1em;
 }
 
@@ -136,15 +116,6 @@ h2 {
     padding: 1rem 1.5rem 0.5rem 0.7rem;
 }
 
-.btn--white:hover {
-    color: #3B5382;
-    background-color: #FFF;
-}
-
-.btn--white:visited {
-    text-decoration: none;
-}
-
 .btn-help {
     display: inline-block;
     font-weight: 400;
@@ -152,17 +123,7 @@ h2 {
     margin-bottom: 1.5rem;
 }
 
-.btn--green:hover {
-    color: #FFF;
-    background-color: #32BBAA;
-}
-
-.btn--blue:hover {
-    color: #FFF;
-    background-color: #3377BB;
-}
-
-.btn--green:visited {
+a:visited {
     text-decoration: none;
 }
 
@@ -175,8 +136,41 @@ h2 {
     fill: #3377BB;
 }
 
-.btn img:hover {
+/*Conditions and switch colors on hover for buttons and MDC arrows*/
+#smartBtn:hover {
     color: #3B5382;
+    background-color: #FFF;
+}
+
+#smartBtn:hover .mdc-arrow .white-bg {
+    fill: #3B5382;
+}
+
+#nannyBtn:hover {
+    color: #32BBAA;
+    background-color: #FFF;
+}
+
+#nannyBtn:hover .mdc-arrow .white-bg {
+    fill: #32BBAA;
+}
+
+.btn--green:hover {
+    color: #FFF;
+    background-color: #32BBAA;
+}
+
+.btn--blue:hover {
+    color: #FFF;
+    background-color: #3377BB;
+}
+
+a:hover .mdc-arrow .green-bg{
+    fill: #FFF;
+}
+
+a:hover .mdc-arrow .blue-bg{
+    fill: #FFF;
 }
 
 /*unique classes styling*/
