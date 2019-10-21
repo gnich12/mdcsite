@@ -55,12 +55,6 @@ h2 {
 /*smart-nanny section starts*/
 
 /*smart-nanny containers settings*/
-.contain-two {
-    display: flex;
-    flex-direction: row;
-    justify-content: stretch;
-}
-
 .section-title {
     display: flex;
     flex-direction: row;
@@ -89,7 +83,7 @@ h2 {
 }
 
 .card-margin {
-    margin: 1em auto;
+    margin: 1em 1em;
 }
 
 .card--title {
@@ -179,12 +173,9 @@ a:hover .mdc-arrow .blue-bg{
     padding-top: 15px;
 }
 
-/*smart-nanny section ends//////////*/
-
-
-.navbarsomething {
-    background-color: #3B5382;  /* fallback for old browsers */
-    background-color: -webkit-linear-gradient(to right, #3B5382 0%, #32BBAA 100%);  /* Chrome 10-25, Safari 5.1-6 */
-    background-color: linear-gradient(to right, #3B5382 0%, #32BBAA 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-    background-size:  cover;
+/*Media queries for <1024px*/
+@media (max-width: 1024px) {
+ 
 }
+
+/*smart-nanny section ends//////////*/
