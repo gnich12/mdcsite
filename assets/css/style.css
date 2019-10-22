@@ -1,0 +1,192 @@
+/*main layout settings*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #FFF;
+}
+
+h2 {
+    min-width: 50%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a:visited {
+    text-decoration: none;   
+   }
+   
+a:focus {
+       outline: 3px solid #DD2445;
+}
+
+/*filling colors*/
+.white-bg {
+    background-color: #FFF;
+    fill: #FFF;
+}
+
+.drk-blue-bg {
+    background-color: #3B5382;
+    fill: #3B5382;
+}
+
+.green-bg {
+    background-color: #32BBAA;
+    fill: #32BBAA;
+}
+
+.blue-bg {
+    background-color: #3377BB;
+    fill: #3377BB;
+}
+
+.white {
+    color: #FFF;
+}
+
+.drk-blue {
+    color: #3B5382;
+}
+
+.green {
+    color: #32BBAA;
+}
+
+.blue {
+    color: #3377BB;
+}
+
+/* Beginning of 
+
+NavBar styles
+
+*/
+.nav-bg {
+    height: 4rem;
+    margin: 0;
+    padding: 0;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3B5382 0%, #32BBAA 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3B5382 0%, #32BBAA 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+}
+
+.logo-main {
+    height: 3.4rem;
+    position: absolute;
+    bottom: 0;
+    top: 0.6rem;
+    left: 2rem;
+}
+
+.logo-main--bg {
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.menu-item {
+    padding: 0 3em;
+    border-right-color: #fff;
+    border-right-width: 1rem;
+}
+
+.nav-icon {
+    margin-right: 2rem;
+    font-size: 20px;
+}
+
+.nav-btn {
+    padding: 1rem 1.75rem;
+    border-left: 1px solid white;
+    margin-right: -.75rem;
+}
+
+.menu-pop {
+    margin-top: -1.5rem;
+    padding: 0.86rem;
+    position: absolute;
+    right: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-pop--btn {
+    padding: 0.3rem 2.75rem;
+    margin: 0.5rem 1.75rem;
+    text-align: center;
+}
+
+.mobile-menu {
+    background-color: rgba(255, 255, 255, 0.75);
+    max-width: 500px; 
+    margin: -1rem auto;
+    padding: 0.86rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Actions for hover on nav buttons*/
+
+.logo-main--bg:hover ~ .logo-main {
+    left:3.5rem;
+}
+
+#env:hover .child-one .white-bg {
+    fill: #32BBAA;
+}
+
+#env:hover .child-two .green-bg {
+    fill: #FFF;
+}
+
+#phone:hover .child-one .white-bg {
+    fill: #32BBAA;
+}
+
+#phone:hover .child-two .green-bg {
+    fill: #FFF;
+}
+
+.nav-btn:hover {
+    background-color: #32BBAA;
+}
+
+.nav-btn:active {
+    background-color: #3B5382;
+}
+
+.menu-pop--btn:hover {
+    background-color: #32BBAA;
+    color: #FFF;
+}
+
+.menu-pop--btn:active {
+    background-color: #3377BB;
+}
+
+/*Media Queries for <1024px Nav Bar */
+@media (max-width: 1023px) {
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+}
+
+/* End of 
+
+NavBar styles
+
+*/
