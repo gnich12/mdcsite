@@ -67,6 +67,7 @@ h2 {
     font-size: 1.4rem;
     text-align: center;
     line-height: 1.8rem;
+    margin-bottom: 0.75rem;
 }
 
 .line {
@@ -76,14 +77,8 @@ h2 {
     align-self: center;
 }
 
-.nanny-container {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-}
-
 .card-margin {
-    margin: 1em 1em;
+    margin: 1em 0.5em;
 }
 
 .card--title {
@@ -93,6 +88,10 @@ h2 {
 
 .card--content {
     padding: 0.5em 1em;
+}
+
+.no-pad {
+    padding: 0;
 }
 
 /*links buttons*/
