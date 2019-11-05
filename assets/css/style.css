@@ -1,0 +1,199 @@
+        /*General section settings*/
+        .section-title {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding-top: 1rem;
+        }
+        
+        .section-subtitle {
+            padding: 0.4em 1em;
+            font-size: 1.4rem;
+            text-align: center;
+            line-height: 1.8rem;
+        }
+        
+        .line {
+            max-width: 30%;
+            min-width: 20%;
+            height: 0.1rem;
+            align-self: center;
+        }
+
+        /*links buttons*/
+.link {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-book {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.7rem 1.2rem 0.5rem 0.7rem;
+}
+
+.btn-help {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.7rem 1.2rem 0.5rem 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.mdc-arrow {
+    height: 1em;
+    padding-left: 0.5em;
+}
+
+.arrow-blue {
+    fill: #3377BB;
+}
+
+/*Conditions and switch colors on hover for buttons and MDC arrows*/
+
+.btn--green:hover {
+    color: #FFF;
+    background-color: #32BBAA;
+}
+
+.btn--blue:hover {
+    color: #FFF;
+    background-color: #3377BB;
+}
+
+a:hover .mdc-arrow .green-bg{
+    fill: #FFF;
+}
+
+a:hover .mdc-arrow .blue-bg{
+    fill: #FFF;
+}
+        
+        /*RoundTrip-CityTours section begins/////*/
+        .xtra-flex {
+            margin-top: 0.8rem;
+        }
+        
+        .xtra-full {
+            display: none;
+        }
+        
+        .img-container {
+            position: relative;
+        }
+        
+        .img-fit {
+            border: 3px solid;
+        }
+        
+        .img-tags {
+            position: absolute;
+            bottom: 0px;
+            width: 100%;
+            text-align: right;
+            font-size: 20px;
+            padding: 0.5rem 1.5rem;
+            font-weight: 400;
+        }
+        
+        .overlay-tile {
+            display: none;
+            position:absolute;
+            bottom:0px;
+            width: 100%;
+            height: 100%;
+        }
+        
+        .overlay-text {
+            font-weight: 400;
+            padding: 1.5rem;
+            line-height: 1.4em;
+            text-align: justify;
+            font-size: 1.5vw;
+        }
+        
+        .round-tile {
+            background-color:rgba(050, 187, 170, 0.85);
+            border: 3px solid #32BBAA;
+        }
+        
+        .round-tag {
+            background-color:rgba(050, 187, 170, 0.75);
+        }
+        
+        .tour-tile {
+            background-color:rgba(059, 083, 130, 0.55);
+            border: 3px solid #FFF;
+        }
+        
+        .tour-tag {
+            background-color:rgba(255, 255, 255, 0.85);
+        }
+        
+        .hover-tile {
+            justify-content: center;
+        }
+        
+        .hover-tile:hover .overlay-tile {
+            display: block;
+        }
+        
+        .hover-tile:hover .img-tags {
+            display:none;
+        }
+        
+        /*Buttons switch colors on hover*/
+        #roundTripBtn:hover {
+            color: #FFF;
+            background-color: #32BBAA;
+        }
+        
+        #roundTripBtn:hover .mdc-arrow .green-bg {
+            fill: #FFF;
+        }
+        
+        @media (max-width: 499px) {
+            .img-fit{
+                height: auto;
+            }
+            .overlay-text{
+                font-size: 5.2vw;
+            }
+        
+            .xtra-none {
+                display: flex;
+            }
+        }
+        
+        @media (min-width: 500px) and (max-width: 768px) {
+        
+        
+            .overlay-text{
+                font-size: 2.6vw;
+            }
+        
+            .xtra-none {
+                display: none;
+            }
+        
+            .xtra-flex {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            }
+        
+            .xtra-half {
+                flex: none;
+                width: 50%;
+            }
+        
+            .xtra-full {
+                display: block;
+                width: 100%;
+            }
+        
+        }
+        
+            /*Rountrip-City tours section ends//////*/
