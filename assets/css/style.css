@@ -1,0 +1,450 @@
+/*main layout settings*/
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 300;
+    font-size: 1.3rem;
+    color: #FFF;
+}
+
+h2 {
+    min-width: 50%;
+    font-size: 2rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+a:visited {
+    text-decoration: none;
+   }
+   
+a:focus {
+    outline: 3px solid #DD2445;
+    background-color:rgba(255, 255, 255, 0.25);
+}
+
+/*filling colors*/
+.white-bg {
+    background-color: #FFF;
+    fill: #FFF;
+}
+
+.drk-blue-bg {
+    background-color: #3B5382;
+    fill: #3B5382;
+}
+
+.green-bg {
+    background-color: #32BBAA;
+    fill: #32BBAA;
+}
+
+.blue-bg {
+    background-color: #3377BB;
+    fill: #3377BB;
+}
+
+.white {
+    color: #FFF;
+}
+
+.drk-blue {
+    color: #3B5382;
+}
+
+.green {
+    color: #32BBAA;
+}
+
+.blue {
+    color: #3377BB;
+}
+
+/* Beginning of 
+
+NavBar styles
+
+*/
+.nav-bg {
+    height: 4rem;
+    margin: 0;
+    padding: 0;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #3B5382 0%, #32BBAA 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #3B5382 0%, #32BBAA 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+}
+
+.logo-main {
+    height: 3.4rem;
+    position: absolute;
+    bottom: 0;
+    top: 0.6rem;
+    left: 2rem;
+}
+
+.logo-main--bg {
+    height: 4rem;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0;
+}
+
+.menu-item {
+    padding: 0 3em;
+    border-right-color: #fff;
+    border-right-width: 1rem;
+}
+
+.nav-icon {
+    margin-right: 2rem;
+    font-size: 20px;
+}
+
+.nav-btn {
+    padding: 1rem 1.75rem;
+    border-left: 1px solid white;
+    margin-right: -.75rem;
+}
+
+.menu-pop {
+    margin-top: -1.5rem;
+    padding: 0.86rem;
+    position: absolute;
+    right: 214px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.menu-pop--btn {
+    padding: 0.3rem 2.75rem;
+    margin: 0.5rem 1.75rem;
+    text-align: center;
+}
+
+.mobile-menu {
+    background-color: rgba(255, 255, 255, 0.75);
+    max-width: 500px; 
+    margin: -1rem auto;
+    padding: 0.86rem;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Actions for hover on nav buttons*/
+
+.logo-main--bg:hover ~ .logo-main {
+    left:3.5rem;
+}
+
+#env:hover .child-one .white-bg {
+    fill: #32BBAA;
+}
+
+#env:hover .child-two .green-bg {
+    fill: #FFF;
+}
+
+#phone:hover .child-one .white-bg {
+    fill: #32BBAA;
+}
+
+#phone:hover .child-two .green-bg {
+    fill: #FFF;
+}
+
+.nav-btn:hover {
+    background-color: #32BBAA;
+}
+
+.nav-btn:active {
+    background-color: #3B5382;
+}
+
+.menu-pop--btn:hover {
+    background-color: #32BBAA;
+    color: #FFF;
+}
+
+.menu-pop--btn:active {
+    background-color: #3377BB;
+}
+
+/*Media Queries for <1024px Nav Bar */
+@media (max-width: 1023px) {
+    .desktop-menu{
+        display: none;
+    }
+    .mobile-menu{
+        display: flex;
+    }
+}
+
+/* End of 
+
+NavBar styles
+
+*/
+
+
+
+
+
+
+/*smart-nanny section starts*/
+
+/*smart-nanny containers settings*/
+.contain-two {
+    display: flex;
+    flex-direction: row;
+    justify-content: stretch;
+}
+
+.section-title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.section-subtitle {
+    padding: 0.4em 1em;
+    font-size: 1.4rem;
+    text-align: center;
+    line-height: 1.8rem;
+}
+
+.line {
+    max-width: 30%;
+    min-width: 20%;
+    height: 0.1rem;
+    align-self: center;
+}
+
+.nanny-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.card-margin {
+    margin: 1em auto;
+}
+
+.card--title {
+    padding: 0.5em 1em;
+    text-align: left;
+}
+
+.card--content {
+    padding: 0.5em 1em;
+}
+
+/*links buttons*/
+.link {
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.btn-book {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.7rem 1.2rem 0.5rem 0.7rem;
+}
+
+.btn-help {
+    display: inline-block;
+    font-weight: 400;
+    padding: 0.7rem 1.2rem 0.5rem 0.7rem;
+    margin-bottom: 1.5rem;
+}
+
+.mdc-arrow {
+    height: 1em;
+    padding-left: 0.5em;
+}
+
+.arrow-blue {
+    fill: #3377BB;
+}
+
+/*Conditions and switch colors on hover for buttons and MDC arrows*/
+#smartBtn:hover {
+    color: #3B5382;
+    background-color: #FFF;
+}
+
+#smartBtn:hover .mdc-arrow .white-bg {
+    fill: #3B5382;
+}
+
+#nannyBtn:hover {
+    color: #32BBAA;
+    background-color: #FFF;
+}
+
+#nannyBtn:hover .mdc-arrow .white-bg {
+    fill: #32BBAA;
+}
+
+.btn--green:hover {
+    color: #FFF;
+    background-color: #32BBAA;
+}
+
+.btn--blue:hover {
+    color: #FFF;
+    background-color: #3377BB;
+}
+
+a:hover .mdc-arrow .green-bg{
+    fill: #FFF;
+}
+
+a:hover .mdc-arrow .blue-bg{
+    fill: #FFF;
+}
+
+/*unique classes styling*/
+.nanny-legend {
+    font-size: 0.9rem;
+    padding-top: 15px;
+}
+
+        /*smart-nanny section ends//////////*/
+
+        /*RoundTrip-CityTours section begins/////*/
+.xtra-flex {
+    margin-top: 0.8rem;
+}
+
+.xtra-full {
+    display: none;
+}
+
+.img-container {
+    position: relative;
+}
+
+.img-fit {
+    border: 3px solid;
+}
+
+.img-tags {
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 400;
+}
+
+.overlay-tile {
+    display: none;
+    position:absolute;
+    bottom:0px;
+    width: 100%;
+    height: 100%;
+}
+
+.overlay-text {
+    font-weight: 400;
+    padding: 1.5rem;
+    line-height: 1.4em;
+    text-align: justify;
+    font-size: 1.5vw;
+}
+
+.round-tile {
+    background-color:rgba(050, 187, 170, 0.85);
+    border: 3px solid #32BBAA;
+}
+
+.round-tag {
+    background-color:rgba(050, 187, 170, 0.75);
+}
+
+.tour-tile {
+    background-color:rgba(059, 083, 130, 0.55);
+    border: 3px solid #FFF;
+}
+
+.tour-tag {
+    background-color:rgba(255, 255, 255, 0.85);
+}
+
+.hover-tile {
+    justify-content: center;
+}
+
+.hover-tile:hover .overlay-tile {
+    display: block;
+}
+
+.hover-tile:hover .img-tags {
+    display:none;
+}
+
+/*Buttons switch colors on hover*/
+#roundTripBtn:hover {
+    color: #FFF;
+    background-color: #32BBAA;
+}
+
+#roundTripBtn:hover .mdc-arrow .green-bg {
+    fill: #FFF;
+}
+
+@media (max-width: 499px) {
+    .img-fit{
+        height: auto;
+    }
+    .overlay-text{
+        font-size: 5.2vw;
+    }
+
+    .xtra-none {
+        display: flex;
+    }
+}
+
+@media (min-width: 500px) and (max-width: 768px) {
+
+
+    .overlay-text{
+        font-size: 2.6vw;
+    }
+
+    .xtra-none {
+        display: none;
+    }
+
+    .xtra-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    }
+
+    .xtra-half {
+        flex: none;
+        width: 50%;
+    }
+
+    .xtra-full {
+        display: block;
+        width: 100%;
+    }
+
+}
+
+    /*Rountrip-City tours section ends//////*/
