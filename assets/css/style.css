@@ -332,6 +332,7 @@ a:hover .mdc-arrow .blue-bg{
 }
 
 .img-container {
+    display: flex;
     position: relative;
 }
 
@@ -411,10 +412,6 @@ a:hover .mdc-arrow .blue-bg{
     }
     .overlay-text{
         font-size: 5.2vw;
-    }
-
-    .xtra-none {
-        display: flex;
     }
 }
 
