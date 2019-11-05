@@ -332,6 +332,7 @@ a:hover .mdc-arrow .blue-bg{
 }
 
 .img-container {
+    display: flex;
     position: relative;
 }
 
