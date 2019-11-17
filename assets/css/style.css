@@ -44,6 +44,10 @@
   color: #3B5382;
   text-decoration: underline;
 }
+.otc:visited {
+  color: #FFF;
+  text-decoration: underline;
+}
 .footer-icon {
   display: flex;
   flex-direction: row;
@@ -104,4 +108,85 @@
 
 .blue {
   color: #3377BB;
+}
+#mobile-footer{
+  display:none;
+}
+@media screen and (max-width:768px){
+  #mobile-footer{
+    display:block;
+  }
+  #desktop {
+    display:none;
+  }
+  .footer {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color: white;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+    height: 100%;
+  }
+  .foot-content-mobile {
+      border-bottom: solid 0.1rem white;
+      display: flex;
+      margin-bottom: 30px;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .foot-content-mobile p {
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foot-content-column {
+      margin-top: 30px;
+      opacity: 0.9;
+      padding: 0;
+  }
+}
+@media screen and (max-width:1042px){
+  #mobile-footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #desktop {
+    display:none;
+  }
+  .footer {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.0rem;
+    color: white;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+    height: 100%;
+  }
+  .foot-content-mobile {
+      border-bottom: solid 0.1rem white;
+      display: flex;
+      margin-bottom: 25px;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .foot-content-mobile p {
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foot-content-column {
+      margin-top: 50px;
+      opacity: 0.9;
+      padding: 0;
+  }
 }
