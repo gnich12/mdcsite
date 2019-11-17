@@ -1,0 +1,192 @@
+.footer {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1rem;
+    color: white;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+    height: 190px;
+}
+.foot-content {
+    width: 90%;
+    border-top: solid 0.1rem white;
+    margin:0 auto;
+    height: 100px;
+}
+.foot-content-column {
+    margin-top: 30px;
+    opacity: 0.9;
+    padding: 0;
+}
+.otc {
+    font-size: 0.8rem;
+    letter-spacing: -0.38px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    height: 100%;
+    
+}
+.otc:link {
+  color: white;
+  text-decoration: underline;
+}
+.otc:hover {
+  color: #32BBAA;
+  text-decoration: underline;
+}
+.otc:active {
+  color: #3B5382;
+  text-decoration: underline;
+}
+.otc:visited {
+  color: #FFF;
+  text-decoration: underline;
+}
+.footer-icon {
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  justify-content: center;
+}
+.envelope {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  margin-bottom: 10px;
+}
+
+.disable-icons {
+  display: none;
+}
+.active-mail, .active-phone {
+  padding-top:10px;
+  margin: 0 auto;
+  width:50px;
+  font-weight: bold;
+}
+.mailcircle {
+  background-color: #3B5382
+}
+/*filling colors*/
+.white-bg-icon {
+  background-color: #FFF;
+  fill: #FFF;
+}
+
+.drk-blue-bg{
+  background-color: #3B5382;
+  fill: #3B5382;
+}
+
+.green-bg {
+  background-color: #32BBAA;
+  fill: #32BBAA;
+}
+
+.blue-bg {
+  background-color: #3377BB;
+  fill: #3377BB;
+}
+
+.white {
+  color: #FFF;
+}
+
+.drk-blue {
+  color: #3B5382;
+}
+
+.green {
+  color: #32BBAA;
+}
+
+.blue {
+  color: #3377BB;
+}
+#mobile-footer{
+  display:none;
+}
+@media screen and (max-width:768px){
+  #mobile-footer{
+    display:block;
+  }
+  #desktop {
+    display:none;
+  }
+  .footer {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 0.9rem;
+    color: white;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+    height: 100%;
+  }
+  .foot-content-mobile {
+      border-bottom: solid 0.1rem white;
+      display: flex;
+      margin-bottom: 30px;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .foot-content-mobile p {
+    height: 125px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foot-content-column {
+      margin-top: 30px;
+      opacity: 0.9;
+      padding: 0;
+  }
+}
+@media screen and (max-width:1042px){
+  #mobile-footer{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  #desktop {
+    display:none;
+  }
+  .footer {
+    font-family: 'Roboto Condensed';
+    font-style: normal;
+    font-weight: lighter;
+    font-size: 1.0rem;
+    color: white;
+    background: #3B5382;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background-size:  cover;
+    height: 100%;
+  }
+  .foot-content-mobile {
+      border-bottom: solid 0.1rem white;
+      display: flex;
+      margin-bottom: 25px;
+      flex-direction: column;
+      justify-content: space-around;
+  }
+  .foot-content-mobile p {
+    height: 102px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+  .foot-content-column {
+      margin-top: 50px;
+      opacity: 0.9;
+      padding: 0;
+  }
+}
