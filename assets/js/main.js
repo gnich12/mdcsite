@@ -1,130 +1,95 @@
+
+
 $(document).ready(function() {
-    $('#box1').on({
-        click: function() {
-            if(!$('#email').hasClass('active-mail')){
-                $('#email').removeClass('disable-icons').addClass('active-mail')
-                console.log(event.target)
+    var envtime;
+    var phonetime;
+    var mobienv;
+    var mobiphone;
+    $('#env').on('click', function(){
+        clearTimeout(phonetime)
+        if(!$('#phonenum').hasClass('disable-icons')){
+            $('#phonenum').toggleClass('disable-icons');
+            $('#email').toggleClass('disable-icons')
+            //turn off phone
+            $('#mobi').removeAttr('style').attr('style', 'color:#3B5382')
+            $('#phonecircle').removeAttr('style').attr('style', 'color:#fff')
+            //turn on mail
+            $('#mailcircle').removeAttr('style').attr('style', 'color:#3B5382')
+            $('#envicon').removeAttr('style').attr('style', 'color:white')
+        } else {
+            if(!$('#email').hasClass('disable-icons')) {
+                $('#email').toggleClass('disable-icons')
+                $('#mailcircle').removeAttr('style').attr('style', 'color:#fff')
+                $('#envicon').removeAttr('style').attr('style', 'color:#3B5382')
+                
             } else {
-                $('#email').removeClass('active-mail').addClass('disable-icons')
-                console.log(event.target)
-            }
-            
-            // if($('#phonenum').hasClass('active-mail')) {
-            //     $('#phonenum').removeClass('active-mail').addClass('disable-icons')
-            //     $('#mobi').removeClass('white').addClass('drk-blue')
-            //     $('#phonecircle').removeClass('drk-blue').addClass('white')
-               
-
-            //     $('#email').removeClass('disable-icons').addClass('active-mail')
-            //     $('#envicon').removeClass('drk-blue').addClass('white')
-            //     $('#mailcircle').addClass('drk-blue')
-               
-
-            // } else {
-            //     $('#email').removeClass('disable-icons').addClass('active-mail')
-            //     $('#envicon').removeClass('drk-blue').addClass('white')
-            //     $('#mailcircle').addClass('drk-blue')
-            //     $('#mailcircle').attr('class', 'fas fa-circle fa-stack-2x drk-blue')
-            //     $('#envicon').attr('class', 'fas fa-envelope fa-stack-1x white')
-            // }
-            // setTimeout(function(){
-            //     $('#email')
-            //         .removeClass('active-mail')
-            //         .addClass('disable-icons')
-            //         .fadeOut('slow')
-            //         // $('#envicon').removeClass('white').addClass('drk-blue')
-            //         // $('#mailcircle').removeClass('drk-blue').addClass('white')
-            //         $('#mailcircle').attr('class', 'fas fa-circle fa-stack-2x white')
-            //         $('#envicon').attr('class', 'fas fa-envelope fa-stack-1x drk-blue')
-            // }, 10000)
-        },
-        mouseenter: function(event) {
-            event.preventDefault();
-            if(!$('#email').hasClass('active-mail')) {    
-                // $('#envicon').removeClass('drk-blue').addClass('white')
-                // $('#mailcircle').addClass('drk-blue')
-                $('#mailcircle').attr('class', 'fas fa-circle fa-stack-2x drk-blue')
-                $('#envicon').attr('class', 'fas fa-envelope fa-stack-1x white')
-            }
-        },
-        mouseleave: function(event) {
-            event.preventDefault();
-            if(!$('#email').hasClass('active-mail')) { 
-                // $('#envicon').removeClass('white').addClass('drk-blue')
-                // $('#mailcircle').removeClass('drk-blue').addClass('white')
-                $('#mailcircle').attr('class', 'fas fa-circle fa-stack-2x white')
-                $('#envicon').attr('class', 'fas fa-envelope fa-stack-1x drk-blue')
+                $('#email').toggleClass('disable-icons')
+                $('#mailcircle').removeAttr('style').attr('style', 'color:#3B5382')
+                $('#envicon').removeAttr('style').attr('style', 'color:white')
             }
         }
+        envtime=setTimeout(function(){
+            $('#email').toggleClass('disable-icons')
+            $('#mailcircle').removeAttr('style').attr('style', 'color:#fff')
+            $('#envicon').removeAttr('style').attr('style', 'color:#3B5382')
+        },15000)
     })
-    
-    // $('#env').on('mouseover', function() {
-    //         event.preventDefault();
-    //         if(!$('#email').hasClass('active-mail')) {    
-    //             // $('#envicon').removeClass('drk-blue').addClass('white')
-    //             // $('#mailcircle').addClass('drk-blue')
-    //             $('#mailcircle').attr('class', 'fas fa-circle fa-stack-2x drk-blue')
-    //             $('#envicon').attr('class', 'fas fa-envelope fa-stack-1x white')
-    //         }
-    //     });
-    // $('#env').on('mouseout', function(event) {
-    //         event.preventDefault();
-    //         if(!$('#email').hasClass('active-mail')) { 
-    //             // $('#envicon').removeClass('white').addClass('drk-blue')
-    //             // $('#mailcircle').removeClass('drk-blue').addClass('white')
-    //             $('#mailcircle').attr('class', 'fas fa-circle fa-stack-2x white')
-    //             $('#envicon').attr('class', 'fas fa-envelope fa-stack-1x drk-blue')
-    //         }
-    //     })
-    $('#phone').on({
-        click: function() {
-            event.preventDefault();
-            if($('#email').hasClass('active-mail')) {
-                $('#email').removeClass('active-mail').addClass('disable-icons')
-                $('#phonenum').removeClass('disable-icons').addClass('active-mail')
-                $('#mobi').removeClass('drk-blue').addClass('white')
-                $('#envicon').removeClass('white').addClass('drk-blue')
-                $('#mailcircle').removeClass('drk-blue').addClass('white')
-                $('#phonecircle').addClass('drk-blue')
-            } else {
-                $('#phonenum').removeClass('disable-icons').addClass('active-mail')
-                $('#mobi').removeClass('drk-blue').addClass('white')
-                $('#phonecircle').addClass('drk-blue')
-            }
-            // setTimeout(function(){
-            //     $('#phonenum')
-            //         .removeClass('active-mail')
-            //         .addClass('disable-icons')
-            //         .fadeOut('slow')
-            //         $('#mobi').removeClass('white').addClass('drk-blue')
-            //         $('#phonecircle').removeClass('drk-blue').addClass('white')
-            // }, 10000)
-        },
-        mouseenter: function(event) {
-            event.preventDefault();
-            if(!$('#phonenum').hasClass('active-mail')) {    
-                // $('#mobi').removeClass('drk-blue')
-                // $('#mobi').addClass('white')
-                // $('#phonecircle').addClass('drk-blue')
-                $('#phonecircle').attr('class', 'fas fa-circle fa-stack-2x drk-blue')
-                $('#mobi').attr('class', 'fas fa-mobile-alt fa-stack-1x white')
-            }
+    $('#phone').on('click', function(){
+        clearTimeout(envtime)
+        if(!$('#email').hasClass('disable-icons')){
+            $('#email').toggleClass('disable-icons');
+            $('#phonenum').toggleClass('disable-icons');
+            //turf off mail
+            $('#mailcircle').removeAttr('style').attr('style', 'color:#fff')
+            $('#envicon').removeAttr('style').attr('style', 'color:#3B5382')
+            //turn on phone
+            $('#phonecircle').removeAttr('style').attr('style', 'color:#3B5382')
+            $('#mobi').removeAttr('style').attr('style', 'color:#fff') 
 
-        },
-        mouseleave: function() {
-            event.preventDefault();
-            if(!$('#phonenum').hasClass('active-mail')) {    
-                // $('#mobi').removeClass('white').addClass('drk-blue')
-                // $('#phonecircle').removeClass('drk-blue').addClass('white')
-                $('#phonecircle').removeAttr('class').attr('class', 'fas fa-circle fa-stack-2x white')
-                $('#mobi').removeAttr('class').attr('class', 'fas fa-mobile-alt fa-stack-1x drk-blue')
+        } else {
+            if(!$('#phonenum').hasClass('disable-icons')) {
+                $('#phonenum').toggleClass('disable-icons')
+                $('#phonecircle').removeAttr('style').attr('style', 'color:#fff')
+                $('#mobi').removeAttr('style').attr('style', 'color:#3B5382')
+            }else {
+                $('#phonenum').toggleClass('disable-icons')
+                $('#phonecircle').removeAttr('style').attr('style', 'color:#3B5382')
+                $('#mobi').removeAttr('style').attr('style', 'color:#fff') 
             }
         }
+        phonetime=setTimeout(function(){
+            $('#phonenum').toggleClass('disable-icons')
+            $('#phonecircle').removeAttr('style').attr('style', 'color:#fff')
+            $('#mobi').removeAttr('style').attr('style', 'color:#3B5382')
+        },15000)
     })
+    $('#phone').hover(over2,out2)
+    function over2(){
+        $('#phonecircle').removeAttr('style').attr('style', 'color:#3B5382')
+        $('#mobi').removeAttr('style').attr('style', 'color:#fff') 
+    }
+    function out2(){
+        if($('#phonenum').hasClass('disable-icons')) {
+            $('#phonecircle').removeAttr('style').attr('style', 'color:#fff')
+            $('#mobi').removeAttr('style').attr('style', 'color:#3B5382')
+        }
+    }
+    $('#env').hover(over,out)
+    function over(){
+        $('#mailcircle').removeAttr('style').attr('style', 'color:#3B5382')
+        $('#envicon').removeAttr('style').attr('style', 'color:white')
+    }
+    function out(){
+        if($('#email').hasClass('disable-icons')) {
+           $('#mailcircle').removeAttr('style').attr('style', 'color:#fff')
+            $('#envicon').removeAttr('style').attr('style', 'color:#3B5382')
+        }
+    }
     $('#env-mobile').bind( "tap", tapHandler );
     $('#env-phone').bind( "tap", tapHandler2 );
     function tapHandler (event){
         event.preventDefault()
+        clearTimeout(mobiphone)
         if($('#pmobile').hasClass('active-mail')) {
             $('#pmobile').removeClass('active-mail').addClass('disable-icons')
             $('#mobicircle').attr('class', 'fas fa-circle fa-stack-2x drk-blue')
@@ -139,7 +104,7 @@ $(document).ready(function() {
             $('#mobicircle').attr('class', 'fas fa-circle fa-stack-2x drk-blue')
             $('#eicon').attr('class', 'fas fa-envelope fa-stack-1x white')    
         }
-        setTimeout(function(){
+        mobienv=setTimeout(function(){
             $("#emobile").removeClass('active-mail').addClass('disable-icons')
             $('#mobicircle').attr('class', 'fas fa-circle fa-stack-2x')
             $('#eicon').attr('class', 'fas fa-envelope fa-stack-1x drk-blue')
@@ -147,6 +112,7 @@ $(document).ready(function() {
     }
     function tapHandler2 (event) {
         event.preventDefault()
+        clearTimeout(mobienv)
         if($('#emobile').hasClass('active-mail')){
             $('#emobile')
                 .removeClass('active-mail')
@@ -169,7 +135,7 @@ $(document).ready(function() {
             $('#emobi')
                 .attr('class', 'fas fa-mobile-alt fa-stack-1x white')
         }
-        setTimeout(function(){
+        mobiphone=setTimeout(function(){
             $("#pmobile").removeClass('active-mail').addClass('disable-icons')
             $('#mobiphone').attr('class', 'fas fa-circle fa-stack-2x')
             $('#emobi').attr('class', 'fas fa-mobile-alt fa-stack-1x drk-blue')
