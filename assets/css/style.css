@@ -69,7 +69,7 @@
   padding-top:10px;
   margin: 0 auto;
   width:50px;
-  font-weight: bold;
+  font-weight: 400;
 }
 .mailcircle {
   background-color: #3B5382
@@ -121,11 +121,7 @@
     display:none;
   }
   .footer {
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: lighter;
     font-size: 0.9rem;
-    color: white;
     background: #3B5382;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
@@ -161,11 +157,7 @@
     display:none;
   }
   .footer {
-    font-family: 'Roboto Condensed';
-    font-style: normal;
-    font-weight: lighter;
-    font-size: 1.0rem;
-    color: white;
+    font-size: 1rem;
     background: #3B5382;  /* fallback for old browsers */
     background: -webkit-linear-gradient(to right,  #32BBAA 0%, #3B5382 100%);  /* Chrome 10-25, Safari 5.1-6 */
     background: linear-gradient(to right, #32BBAA 0%, #3B5382 100%); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
