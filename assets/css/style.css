@@ -59,6 +59,7 @@
   flex-direction: row;
   justify-content: left;
   margin-bottom: 10px;
+  cursor: pointer;
 }
 
 .disable-icons {
