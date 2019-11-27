@@ -142,19 +142,19 @@ NavBar styles
     left:3.5rem;
 }
 
-#env:hover .child-one .white-bg {
+#env-navbar:hover .child-one .white-bg {
     fill: #32BBAA;
 }
 
-#env:hover .child-two .green-bg {
+#env-navbar:hover .child-two .green-bg {
     fill: #FFF;
 }
 
-#phone:hover .child-one .white-bg {
+#phone-navbar:hover .child-one .white-bg {
     fill: #32BBAA;
 }
 
-#phone:hover .child-two .green-bg {
+#phone-navbar:hover .child-two .green-bg {
     fill: #FFF;
 }
 
@@ -174,7 +174,9 @@ NavBar styles
 .menu-pop--btn:active {
     background-color: #3377BB;
 }
-
+.hide-menu, .hide-email, .hide-phone{
+    display:none;
+}
 /*Media Queries for <1024px Nav Bar */
 @media (max-width: 1023px) {
     .desktop-menu{
