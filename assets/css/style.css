@@ -111,7 +111,8 @@ NavBar styles
 }
 
 .menu-pop {
-    margin-top: -1.5rem;
+    margin-top: 0; /*-1.5rem; */
+    margin-right: -226px;
     padding: 0.86rem;
     position: absolute;
     right: 214px;
@@ -177,13 +178,44 @@ NavBar styles
 .hide-menu, .hide-email, .hide-phone{
     display:none;
 }
+.navbar-item img {
+    max-height: 4.75rem;
+}
+.barnav-brand{
+    width:170px;
+    height:4rem;
+}
+#deskemail, #deskphone{
+    color:white;
+}
+
 /*Media Queries for <1024px Nav Bar */
 @media (max-width: 1023px) {
     .desktop-menu{
         display: none;
     }
     .mobile-menu{
+        display: block;
+    }
+    .menu-list a {
+        color:white;
+    }
+    .menu-mobile {
+        position: relative;
+        height: 100%;
+        left: 8.5rem;
+        top: 1.2rem;
         display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    .navbar-burger {
+        color:white;
+        height:4rem;
+        border-left-color: white;
+    }
+    .navbar-burger:hover{
+        color:white;
     }
 }
 
