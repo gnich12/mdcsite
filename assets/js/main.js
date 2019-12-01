@@ -1,7 +1,11 @@
 
 $(document).ready(function() {
-    $('#deskmenu').on('click', function(){
+    $('.has-dropdown').on('click', function(){
         $('#menunavbar').toggleClass('hide-menu')
+    })
+    $('.navbar-burger').on('click', function(){
+        $('#mobimenu').toggleClass('hide-menu')
+        $('.navbar-burger').toggleClass('is-active')
     })
     $('#env-navbar').on('click', function(){
         if(!$('#deskphone').hasClass('hide-phone')) {
