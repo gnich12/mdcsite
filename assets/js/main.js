@@ -124,8 +124,8 @@ $(document).ready(function() {
             $('#envicon').removeAttr('style').attr('style', 'color:#3B5382')
         }
     }
-    $('#env-mobile').bind( "tap", tapHandler );
-    $('#env-phone').bind( "tap", tapHandler2 );
+    $('#env-mobile').on( "click", tapHandler );
+    $('#env-phone').on( "click", tapHandler2 );
     function tapHandler (event){
         event.preventDefault()
         clearTimeout(mobiphone)
