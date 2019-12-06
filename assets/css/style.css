@@ -269,7 +269,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 3rem;
   }
   
   .hero-title {
@@ -339,7 +338,7 @@ body {
   @media (max-width: 768px) {
     .hero-text {
       align-items: center;
-      margin: 1rem 0 -2rem 0;
+      margin: 1rem;
     }
   
     .hero-text p {
@@ -352,9 +351,15 @@ body {
       text-align: center;
       font-size: 2rem;
     }
-  
+
     .hero-image {
       margin-top: -3em;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    .hero-text {
+      padding-left: 3rem;
     }
   }
 
@@ -642,15 +647,6 @@ body {
     background-size: contain;
   }
   
-  .apple-badge {
-    background-image: url("images\button--apple-store.png");
-  }
-  
-  .google-badge {
-    background-image: url("images\button--google-play.png");
-    align-self: center;
-  }
-  
   @media (max-width: 499px) {
     .contain-flex--badges {
       flex-direction: column;
@@ -697,6 +693,7 @@ body {
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     height: 190px;
+    margin-top: -1rem;
   }
   .foot-content {
     width: 90%;
