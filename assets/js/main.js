@@ -8,6 +8,10 @@ $(document).ready(function() {
         $('#mobimenu').toggleClass('hide-menu')
         $('.navbar-burger').toggleClass('is-active')
     })
+    $('#mobimenu a').on('click', function(){
+        $('#mobimenu').toggleClass('hide-menu')
+        $('.navbar-burger').toggleClass('is-active')
+    })
     $('#env-navbar').on('click', function(){
         if(!$('#deskphone').hasClass('hide-phone')) {
            togglePhone();
@@ -27,16 +31,32 @@ $(document).ready(function() {
     function togglePhone(){
         $('#deskphone').toggle('slow').toggleClass('hide-phone')
         var phonecir = $('#pc path')
-        phonecir.toggleClass('white-bg').toggleClass('drk-blue-bg')
         var mobicon = $('#mi path')
-        mobicon.toggleClass('green-bg').toggleClass('white-bg')
+        if(phonecir.attr('style')){
+            phonecir.removeProp('style')
+        } else {
+            phonecir.prop('style',"fill: #3b5382")
+        }
+        if(mobicon.attr('style')){
+            mobicon.removeProp('style')
+        } else {
+            mobicon.prop('style',"fill: #fff")
+        }    
     }
     function toggleEmail(){
         $('#deskemail').toggle('slow').toggleClass('hide-email')
         var mail = $('#mc path')
-        mail.toggleClass('white-bg').toggleClass('drk-blue-bg')
         var envelope = $('#envi path')
-        envelope.toggleClass('green-bg').toggleClass('white-bg')
+        if(mail.attr('style')){
+            mail.removeProp('style')
+        } else {
+            mail.prop('style',"fill: #3b5382")
+        }
+        if(envelope.attr('style')){
+            envelope.removeProp('style')
+        } else {
+            envelope.prop('style',"fill: #fff")
+        } 
     }
 
 
