@@ -335,7 +335,7 @@ body {
     fill: #fff;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     .hero-text {
       align-items: center;
       margin: 1rem;
