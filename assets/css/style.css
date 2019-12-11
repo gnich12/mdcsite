@@ -6,6 +6,7 @@ body {
     font-weight: 300;
     font-size: 1.3rem;
     color: #fff;
+    overflow: hidden;
   }
   
   h2 {
@@ -335,6 +336,17 @@ body {
     fill: #fff;
   }
   
+  @media (max-width: 768px) {
+    .hero-text p {
+      padding: 0 2.5rem;
+    }
+
+    .hero-image {
+      display: block;
+      margin-top: -3em;
+    }
+  }
+
   @media (max-width: 1023px) {
     .hero-text {
       align-items: center;
@@ -344,16 +356,11 @@ body {
     .hero-text p {
       text-align: center;
       font-size: 1.2rem;
-      padding: 0 1rem;
     }
   
     .hero-title {
       text-align: center;
       font-size: 2rem;
-    }
-
-    .hero-image {
-      margin-top: -3em;
     }
   }
 
