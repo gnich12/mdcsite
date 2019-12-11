@@ -269,7 +269,6 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding-left: 3rem;
   }
   
   .hero-title {
@@ -336,10 +335,10 @@ body {
     fill: #fff;
   }
   
-  @media (max-width: 768px) {
+  @media (max-width: 1023px) {
     .hero-text {
       align-items: center;
-      margin: 1rem 0 -2rem 0;
+      margin: 1rem;
     }
   
     .hero-text p {
@@ -352,9 +351,15 @@ body {
       text-align: center;
       font-size: 2rem;
     }
-  
+
     .hero-image {
       margin-top: -3em;
+    }
+  }
+
+  @media(min-width: 1024px) {
+    .hero-text {
+      padding-left: 3rem;
     }
   }
 
@@ -470,12 +475,22 @@ body {
   }
   
   .img-fit {
-    border: 3px solid;
+    border: 1.5px solid;
   }
   
   .img-tags {
     position: absolute;
-    bottom: 0px;
+    bottom: 7px;
+    width: 100%;
+    text-align: right;
+    font-size: 20px;
+    padding: 0.5rem 1.5rem;
+    font-weight: 400;
+  }
+
+  .xtra-tag {
+    position: absolute;
+    bottom: 7px;
     width: 100%;
     text-align: right;
     font-size: 20px;
@@ -486,7 +501,7 @@ body {
   .overlay-tile {
     display: none;
     position: absolute;
-    bottom: 0px;
+    bottom: 4px;
     width: 100%;
     height: 100%;
   }
@@ -551,6 +566,10 @@ body {
     .xtra-none {
       display: flex;
     }
+
+    .xtra-tag {
+      bottom: 1px;
+    }
   }
   
   @media (min-width: 500px) and (max-width: 768px) {
@@ -577,6 +596,10 @@ body {
     .xtra-full {
       display: block;
       width: 100%;
+    }
+
+    .xtra-tag {
+      bottom: 1px;
     }
   }
   /*Rountrip-City tours section ends///Personalized section begins*/
@@ -642,15 +665,6 @@ body {
     background-size: contain;
   }
   
-  .apple-badge {
-    background-image: url("images\button--apple-store.png");
-  }
-  
-  .google-badge {
-    background-image: url("images\button--google-play.png");
-    align-self: center;
-  }
-  
   @media (max-width: 499px) {
     .contain-flex--badges {
       flex-direction: column;
@@ -697,6 +711,7 @@ body {
     ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     height: 190px;
+    margin-top: -1rem;
   }
   .foot-content {
     width: 90%;
